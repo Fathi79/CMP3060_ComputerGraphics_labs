@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{357C704F-783E-31BF-8C8C-DF0D1263FBED}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/vendor/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\bin\cmake.exe "-SC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder" "-BC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build" --check-stamp-file "C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build/vendor/glfw-3.3.8/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3.pc.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3Config.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw_config.h.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindThreads.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\build\vendor\glfw-3.3.8\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/vendor/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\bin\cmake.exe "-SC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder" "-BC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build" --check-stamp-file "C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build/vendor/glfw-3.3.8/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3.pc.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3Config.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw_config.h.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindThreads.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\build\vendor\glfw-3.3.8\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/vendor/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\bin\cmake.exe "-SC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder" "-BC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build" --check-stamp-file "C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build/vendor/glfw-3.3.8/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3.pc.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3Config.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw_config.h.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindThreads.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\build\vendor\glfw-3.3.8\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/vendor/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\bin\cmake.exe "-SC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder" "-BC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build" --check-stamp-file "C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build/vendor/glfw-3.3.8/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3.pc.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw3Config.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\vendor\glfw-3.3.8\src\glfw_config.h.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\FindThreads.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\build\vendor\glfw-3.3.8\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\build\ZERO_CHECK.vcxproj">
+      <Project>{396F5ACB-AB0D-348E-92DB-FA93C0BA385F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\New folder\build\vendor\glfw-3.3.8\src\glfw.vcxproj">
+      <Project>{FCB6510E-09A0-3EFF-A039-FD7DD88B941E}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

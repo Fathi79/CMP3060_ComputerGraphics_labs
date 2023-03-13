@@ -1,0 +1,10 @@
+^C:\USERS\FATHI\ONEDRIVE\DESKTOP\3RD_YEAR\COMPUTERGRAPHICS\NEW FOLDER\CMAKELISTS.TXT
+setlocal
+C:\Users\fathi\OneDrive\Desktop\3rd_year\ComputerGraphics\cmake-3.26.0-rc3-windows-x86_64\bin\cmake.exe "-SC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder" "-BC:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build" --check-stamp-file "C:/Users/fathi/OneDrive/Desktop/3rd_year/ComputerGraphics/New folder/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
